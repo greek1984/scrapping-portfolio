@@ -18,10 +18,31 @@
 - beautifulsoup4 + lxml  
 - pandas + openpyxl  
 
-## Как запустить
-Из корня проекта выполнить:
+## Установка и запуск
+**1. Клонируйте репозиторий(если еще не скачан):**
+```
+git clone [https://github.com/greek1984/scrapping-portfolio.git](https://github.com/greek1984/scrapping-portfolio.git)
+```
+**2. Перейдите в каталог проекта:**
+```commandline
+cd scrapping-portfolio/hh_kazan_qa
+```
+**3. Создайте и активируйте виртуальное окружение:**
+```
+# Для Windows
+python -m venv venv
+venv\Scripts\activate
 
-```bash
+# Для macOS/Linux
+python3 -m venv venv
+source venv/bin/activate``
+ ```
+**4. Установите зависимости:**
+```
+pip install -r requirements.txt
+```
+**5. Из корня проекта запустите парсер:**
+```
 python -m hh_kazan_qa.test_fetcher
 ```
 ## Результат:
